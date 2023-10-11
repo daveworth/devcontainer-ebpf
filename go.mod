@@ -1,4 +1,4 @@
-module github.com/daveworth/refresher
+module github.com/daveworth/devcontainer-ebpf
 
 go 1.21.0
 

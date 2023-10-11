@@ -6,7 +6,6 @@ package kprobe
 
 import (
 	"context"
-	"fmt"
 	"log"
 	"time"
 
@@ -56,7 +55,6 @@ func Trackexecve(ctx context.Context) {
 	for {
 		select {
 		case <-ctx.Done():
-			fmt.Println("context is Done in kprobe.Trackexecve()")
 			return
 		case <-ticker.C:
 			var value uint64
